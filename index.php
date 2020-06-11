@@ -47,6 +47,7 @@
                                         echo "<th>#</th>";
                                         echo "<th>Name</th>";
                                         echo "<th>Address</th>";
+                                        echo "<th>Birthdate</th>";
                                         echo "<th>Salary</th>";
                                         echo "<th>Action</th>";
                                     echo "</tr>";
@@ -57,7 +58,9 @@
                                         echo "<td>" . $row['id'] . "</td>";
                                         echo "<td>" . $row['name'] . "</td>";
                                         echo "<td>" . $row['address'] . "</td>";
+                                        echo "<td>" . $row['birthdate'] . "</td>";
                                         echo "<td>" . $row['salary'] . "</td>";
+
                                         echo "<td>";
                                             echo "<a href='read.php?id=". $row['id'] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'></span></a>";
                                             echo "<a href='update.php?id=". $row['id'] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'></span></a>";
